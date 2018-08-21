@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: `../client/src/artists_container.js`,
+  entry: `../client/src/embed.js`,
   output: {
     library: 'Artists',
     libraryTarget: 'umd',

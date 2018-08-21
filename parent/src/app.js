@@ -9,7 +9,7 @@ export default function App() {
       <header className="app__header">Parent Header</header>
       <div className="app__main">
         <div className="app__main__box">
-          <MicroFrontends.Songs authToken="" basename="" />
+          <MicroFrontends.Artists authToken="" basename="" />
         </div>
       </div>
       <footer className="app__footer">Parent Footer</footer>
