@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './artists.css';
+import ArtistsListItem from './artists_list_item';
 
+import './artists.css';
 
 export default class Artists extends React.Component {
   static propTypes = {
@@ -18,13 +19,12 @@ export default class Artists extends React.Component {
     selectedArtist: ''
   };
   renderArtist = ({ name }) => (
-    <button
+    <ArtistsListItem
       key={name}
-      onClick={() => this.props.selectArtist(name)}
-      className={`artists__list_item ${this.props.selectedArtist === name ? 'artists__list_item--selected' : ''}`}
-    >
-      {name}
-    </button>
+      name={name}
+      selectArtist={this.props.selectArtist}
+      selected={this.props.selectedArtist === name}
+    />
   );
   render() {
     return this.props.artists.map(this.renderArtist);
