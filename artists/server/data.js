@@ -8,67 +8,67 @@ const genres = {
 
 const artists = [
   {
-    genre: 'Blues',
+    genre: genres.blues,
     name: 'B.B. King'
   },
   {
-    genre: 'Blues',
+    genre: genres.blues,
     name: 'Etta James'
   },
   {
-    genre: 'Blues',
+    genre: genres.blues,
     name: 'Robert Johnson'
   },
   {
-    genre: 'Pop/Rock',
+    genre: genres.popRock,
     name: 'Elvis Presley'
   },
   {
-    genre: 'Pop/Rock',
+    genre: genres.popRock,
     name: 'The Rolling Stones'
   },
   {
-    genre: 'Pop/Rock',
+    genre: genres.popRock,
     name: 'Nirvana'
   },
   {
-    genre: 'Pop/Rock',
+    genre: genres.popRock,
     name: 'U2'
   },
   {
-    genre: 'R&B',
+    genre: genres.rb,
     name: 'Stevie Wonder'
   },
   {
-    genre: 'R&B',
+    genre: genres.rb,
     name: 'Alicia Keys'
   },
   {
-    genre: 'R&B',
+    genre: genres.rb,
     name: 'James Brown'
   },
   {
-    genre: 'R&B',
+    genre: genres.rb,
     name: 'Marvin Gaye'
   },
   {
-    genre: 'Rap',
+    genre: genres.rap,
     name: 'Eminem'
   },
   {
-    genre: 'Rap',
+    genre: genres.rap,
     name: 'The Roots'
   },
   {
-    genre: 'Rap',
+    genre: genres.rap,
     name: '2Pac'
   },
   {
-    genre: 'Reggae',
+    genre: genres.reggae,
     name: 'Bob Marley'
   },
   {
-    genre: 'Reggae',
+    genre: genres.reggae,
     name: 'UB40'
   },
 ];

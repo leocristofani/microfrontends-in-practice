@@ -1,0 +1,8 @@
+body {
+  padding: 0;
+  margin: 32px auto;
+  max-width: 600px;
+  padding: 32px;
+  border: 1px palevioletred dashed;
+  font: normal 16px/1.5 sans-serif;
+}

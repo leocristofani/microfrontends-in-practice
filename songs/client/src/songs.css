@@ -1,0 +1,36 @@
+button:focus, button:active,
+select:focus, select:active {
+  outline: none;
+}
+
+.songs__genre_selector {
+  margin-bottom: 16px;
+  width: 100px;
+  line-height: 32px;
+  height: 32px;
+  border: 1px peachpuff dashed;
+  width: 100%;
+  cursor: pointer;
+  background: white;
+  text-transform: uppercase;
+}
+
+.songs__list_item {
+  border: 1px peachpuff dashed;
+  background: transparent;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 16px 8px;
+  text-transform: uppercase;
+}
+
+.songs__list_item:hover {
+  background: peachpuff;
+}
+
+.songs__list_item--selected {
+  background: peachpuff;
+}
