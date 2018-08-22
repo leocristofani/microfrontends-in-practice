@@ -11,6 +11,13 @@ body {
   border-bottom: 1px palegreen dashed;
 }
 
+.app__logo {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
 .app__main {
   display: flex;
   width: 100%;

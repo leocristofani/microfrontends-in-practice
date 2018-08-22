@@ -6,7 +6,9 @@ import './app.css';
 export default function App() {
   return (
     <div className="app">
-      <header className="app__header">Parent Header</header>
+      <header className="app__header">
+        <h1 class="app__logo">Mi<strong>Songs</strong></h1>
+      </header>
       <div className="app__main">
         <div className="app__main__box">
           <div className="app__main__box__inner">
