@@ -1,3 +1,3 @@
-import ArtistsContainer from './artists_container';
+import SongsContainer from './songs_container';
 
-export const Component = ArtistsContainer;
+export const Component = SongsContainer;

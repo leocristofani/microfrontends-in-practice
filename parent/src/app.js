@@ -9,10 +9,17 @@ export default function App() {
       <header className="app__header">Parent Header</header>
       <div className="app__main">
         <div className="app__main__box">
-          <MicroFrontends.Artists authToken="" basename="" />
+          <div className="app__main__box__inner">
+            <MicroFrontends.Artists authToken="" basename="" />
+          </div>
+        </div>
+        <div className="app__main__box">
+          <div className="app__main__box__inner">
+            <MicroFrontends.Songs authToken="" basename="" />
+          </div>
         </div>
       </div>
-      <footer className="app__footer">Parent Footer</footer>
+      <footer className="app__footer">&copy; Microfrontends in Practice 2018. I hope this is useful!</footer>
     </div>
   );
 }
