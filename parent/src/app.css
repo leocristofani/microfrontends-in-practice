@@ -1,7 +1,12 @@
+*, html {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
-  margin: 0;
   color: #444;
+  max-width: 800px;
+  margin: 64px auto;
   font: normal 14px/1.5 sans-serif;
 }
 
@@ -19,10 +24,11 @@ body {
 .app__main {
   display: flex;
   width: 100%;
+  padding: 8px;
 }
 
 .app__main__column {
-  padding: 16px;
+  padding: 8px;
 }
 
 .app__main__column:first-child {

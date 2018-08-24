@@ -51,7 +51,6 @@ export default class ArtistsContainer extends Component {
           selectArtist={this.onSelectArtist}
           artists={ArtistsContainer.filterByGenre(artists, selectedGenre)}
         />
-        <button onClick={() => { throw new Error('Error') }}>Cause an error, please!</button>
       </ErrorBoundary>
     );
   }
