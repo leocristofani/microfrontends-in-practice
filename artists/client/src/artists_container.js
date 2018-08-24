@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 
 import Artists from './artists';
 import GenreSelector from './genre_selector';
+import ErrorBoundary from './error_boundary';
 
 export default class ArtistsContainer extends Component {
   static filterByGenre(artists, genre) {
@@ -39,7 +40,7 @@ export default class ArtistsContainer extends Component {
       selectedArtist
     } = this.state;
     return (
-      <Fragment>
+      <ErrorBoundary>
         <GenreSelector
           genres={this.state.genres}
           selectGenre={this.onSelectGenre}
@@ -50,7 +51,8 @@ export default class ArtistsContainer extends Component {
           selectArtist={this.onSelectArtist}
           artists={ArtistsContainer.filterByGenre(artists, selectedGenre)}
         />
-      </Fragment>
+        <button onClick={() => { throw new Error('Error') }}>Cause an error, please!</button>
+      </ErrorBoundary>
     );
   }
 }

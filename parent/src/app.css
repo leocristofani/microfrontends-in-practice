@@ -38,10 +38,3 @@ body {
   margin-bottom: 16px;
   border: 2px palevioletred dashed;
 }
-
-.app__footer {
-  font-size: 0.85em;
-  text-align: center;
-  color: #999;
-  padding: 16px;
-}

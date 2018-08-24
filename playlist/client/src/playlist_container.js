@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import ErrorBoundary from './error_boundary';
 import Playlist from './playlist';
 
 const SONGS_SELECT_SONG = 'songs:select:song';
@@ -23,6 +24,10 @@ export default class PlaylistContainer extends Component {
     }));
   }
   render() {
-    return <Playlist playlist={this.state.playlist} />;
+    return (
+      <ErrorBoundary>
+        <Playlist playlist={this.state.playlist} />
+      </ErrorBoundary>
+    );
   }
 }

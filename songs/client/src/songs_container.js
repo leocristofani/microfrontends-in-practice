@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 
+import ErrorBoundary from './error_boundary';
 import Songs from './songs';
 
 const ARTISTS_SELECT_ARTIST = 'artists:select:artist';
@@ -25,6 +26,10 @@ export default class SongsContainer extends Component {
   }
   render() {
     const { artist, songs } = this.state;
-    return <Songs artist={artist} songs={songs} />;
+    return (
+      <ErrorBoundary>
+        <Songs artist={artist} songs={songs} />
+      </ErrorBoundary>
+    );
   }
 }

@@ -24,7 +24,6 @@ export default function App() {
           </div>
         </div>
       </div>
-      <footer className="app__footer">&copy; Microfrontends in Practice 2018. I hope this is useful!</footer>
     </div>
   );
 }
