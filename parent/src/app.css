@@ -6,16 +6,14 @@ body {
 }
 
 .app__header {
-  padding: 16px;
-  margin: 16px;
-  border-bottom: 1px palegreen dashed;
+  margin: 16px 16px 0;
 }
 
 .app__logo {
-  font-weight: normal;
-  font-size: 18px;
   margin: 0;
+  font-size: 18px;
   line-height: 1;
+  font-weight: normal;
 }
 
 .app__main {
@@ -23,21 +21,22 @@ body {
   width: 100%;
 }
 
-.app__main__box {
-  padding: 0 16px;
-}
-
-.app__main__box__inner {
+.app__main__column {
   padding: 16px;
-  border: 4px palegreen dashed;
 }
 
-.app__main__box:first-child {
+.app__main__column:first-child {
   flex: 2;
 }
 
-.app__main__box:last-child {
+.app__main__column:last-child {
   flex: 1;
+}
+
+.microfrontend__wrapper {
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 2px palevioletred dashed;
 }
 
 .app__footer {
@@ -45,6 +44,4 @@ body {
   text-align: center;
   color: #999;
   padding: 16px;
-  margin: 16px;
-  border-top: 1px palegreen dashed;
 }

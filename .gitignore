@@ -7,3 +7,8 @@ songs/client/node_modules/
 songs/server/node_modules/
 songs/server/public/
 songs/utils/node_modules/
+
+playlist/client/node_modules/
+playlist/server/node_modules/
+playlist/server/public/
+playlist/utils/node_modules/

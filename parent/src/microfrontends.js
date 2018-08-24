@@ -30,4 +30,5 @@ function buildMicroFrontend(baseUrl, name) {
 export default class MicroFrontends extends Component {
   static Artists = buildMicroFrontend('http://localhost:3001', 'Artists');
   static Songs = buildMicroFrontend('http://localhost:3003', 'Songs');
+  static Playlist = buildMicroFrontend('http://localhost:3005', 'Playlist');
 }
