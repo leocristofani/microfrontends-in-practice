@@ -1,3 +1,5 @@
+.DS_Store
+
 artists/client/node_modules/
 artists/server/node_modules/
 artists/server/public/
