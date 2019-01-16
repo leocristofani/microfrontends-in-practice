@@ -15,7 +15,7 @@ export default class SongsContainer extends Component {
     window.addEventListener(ARTISTS_SELECT_ARTIST, this.fetchSongs);
     this.fetchSongs({ detail: { artist: this.state.artist } });
   }
-  componentWillMount = () => {
+  componentWillUnmount = () => {
     window.removeEventListener(ARTISTS_SELECT_ARTIST, this.fetchSongs);
   }
   fetchSongs = ({ detail: { artist } }) => {
